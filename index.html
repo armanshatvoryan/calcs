@@ -35,7 +35,7 @@
 				$('#But').bind('click', function(){
 					if($("#Type").val() != null &&
 						$("#Lev").val() != null && 
-						$("#Len").val() != "Квадратура" &&
+						$("#Len").val() != "ГЉГўГ Г¤Г°Г ГІГіГ°Г " &&
 						parseInt($("#Len").val()) >= 25 )
 					{
 						if($("#Eror").text() != "")
@@ -83,11 +83,11 @@
 						}
 						var sumot = Math.floor((parseInt($("#Len").val()) * kof) - (parseInt($("#Len").val()) * kof/10));
 						var sumdo = Math.floor((parseInt($("#Len").val()) * kof) + (parseInt($("#Len").val()) * kof/15));
-						$("#End").text("От:"+sumot+" До:"+sumdo);
+						$("#End").text("РћС‚:"+sumot+" Р”Рѕ:"+sumdo);
 					}
 					else
 					{
-						$("#Eror").text("Ошибка");
+						$("#Eror").text("РћС€РёР±РєР°");
 					}
 					});
 			});
@@ -97,22 +97,22 @@
 		<div id="Content">
 			<p id="Eror"></p>
 			<select id = "Type">
-			<option disabled selected>Тип ремонта</option> 
-			<option value="t1">Новостройка</option>
-			<option value="t2">Капитальный</option>
-			<option value="t3">Косметический</option>
+			<option disabled selected>РўРёРї СЂРµРјРѕРЅС‚Р°</option> 
+			<option value="t1">РќРѕРІРѕСЃС‚СЂРѕР№РєР°</option>
+			<option value="t2">РљР°РїРёС‚Р°Р»СЊРЅС‹Р№</option>
+			<option value="t3">РљРѕСЃРјРµС‚РёС‡РµСЃРєРёР№</option>
 			</select>
 			</br>
 			<select id = "Lev">
-			<option disabled selected>Уровень</option> 
-			<option value="l1">Стандарт</option>
-			<option value="l2">Евро</option>
-			<option value="l3">Эксклюзив</option>
+			<option disabled selected>РЈСЂРѕРІРµРЅСЊ</option> 
+			<option value="l1">РЎС‚Р°РЅРґР°СЂС‚</option>
+			<option value="l2">Р•РІСЂРѕ</option>
+			<option value="l3">Р­РєСЃРєР»СЋР·РёРІ</option>
 			</select>
 			</br>
-			<input min=40 id="Len" onkeyup="this.value = this.value.replace (/[^0-9]/, '')" value="Квадратура" onfocus="if(this.value == 'Квадратура'){this.value = ''}" onblur="if(this.value == '') this.value = 'Квадратура';"/>
+			<input min=40 id="Len" onkeyup="this.value = this.value.replace (/[^0-9]/, '')" value="ГЉГўГ Г¤Г°Г ГІГіГ°Г " onfocus="if(this.value == 'ГЉГўГ Г¤Г°Г ГІГіГ°Г '){this.value = ''}" onblur="if(this.value == '') this.value = 'ГЉГўГ Г¤Г°Г ГІГіГ°Г ';"/>
 			</br>
-			<button id="But">Рассчитать</button>
+			<button id="But">Р Р°СЃСЃС‡РёС‚Р°С‚СЊ</button>
 			</br>
 			<p id ="End"></p>
 		</div>

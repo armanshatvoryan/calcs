@@ -33,10 +33,7 @@
 			$(document).ready(function(e)
 			{
 				$('#But').bind('click', function(){
-					if($("#Type").val() != null &&
-						$("#Lev").val() != null && 
-						$("#Len").val() != "Êâàäðàòóðà" &&
-						parseInt($("#Len").val()) >= 25 )
+					if($("#Type").val() != null && $("#Lev").val() != null && $("#Len").val() != "Квадратура" && parseInt($("#Len").val()) >= 25 )
 					{
 						if($("#Eror").text() != "")
 							$("#Eror").text("");
